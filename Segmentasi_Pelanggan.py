@@ -19,7 +19,7 @@ from PIL import Image
 # Menambahkan banner gambar dari folder proyek
 image_path = "banner.png"  # Ganti dengan path gambar yang sesuai
 banner_image = Image.open(image_path)
-st.image(banner_image, use_column_width=True)
+st.image(banner_image)  # Tanpa parameter tambahan, akan otomatis menyesuaikan
 
 # Menambahkan judul aplikasi
 st.title("Aplikasi Pengelompokan Segmentasi Pelanggan dengan Hierarchical Clustering dan KMeans")
